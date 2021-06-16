@@ -1,0 +1,9 @@
+{
+    "editor.fontSize": 16, 
+    "files.autoSave": "off",
+    "editor.wordWrap": "on",
+    "editor.formatOnSave": false, 
+    "editor.tokenColorCustomizations": {
+        "comments": "#d9ff00"
+    },
+}
