@@ -1,0 +1,30 @@
+.btn-text {
+    &, 
+    &:link, 
+    &:visited {
+        text-decoration: none;
+        cursor: pointer;
+        transition: all .4s;
+        padding: .5rem;
+    }
+
+    & span {
+        color: $color-primary;
+        transition: all .4s;
+        // font-size: 1.8rem;
+        // line-height: 1.8rem;
+    }
+
+    &:hover {
+        color: $color-primary;
+        font-size: 1.6rem;
+
+        & span {
+            font-size: 1.6rem;
+            margin-left: 1rem;
+        }
+    }
+
+
+
+}

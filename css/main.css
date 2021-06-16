@@ -27,4 +27,48 @@ body {
   font-weight: 700;
   font-size: 5.2rem;
   line-height: 5.6rem;
-  letter-spacing: 3%; }
+  letter-spacing: .03em; }
+
+.text-primary {
+  font-size: 1.8rem;
+  letter-spacing: .02em;
+  color: #4f4f4f; }
+
+.btn-text {
+  color: #212121;
+  font-weight: 700;
+  font-size: 1.4rem;
+  letter-spacing: .02em; }
+
+.section-features {
+  margin: 5rem 1rem 2rem 1rem; }
+
+.btn-text, .btn-text:link, .btn-text:visited {
+  text-decoration: none;
+  cursor: pointer;
+  transition: all .4s;
+  padding: .5rem; }
+
+.btn-text span {
+  color: #0c73d5;
+  transition: all .4s; }
+
+.btn-text:hover {
+  color: #0c73d5;
+  font-size: 1.6rem; }
+  .btn-text:hover span {
+    font-size: 1.6rem;
+    margin-left: 1rem; }
+
+.feature-box {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .feature-box .right-block {
+    padding: .5rem 1.5rem;
+    max-width: 45%; }
+  .feature-box .left-block {
+    padding: .5rem 1.5rem;
+    max-width: 45%; }
+  .feature-box .feature-img {
+    background-image: url("../img/features-1-min.png"); }
