@@ -2,29 +2,25 @@
     &, 
     &:link, 
     &:visited {
+        display: inline-block;
         text-decoration: none;
         cursor: pointer;
-        transition: all .4s;
+        transition: all .3s;
         padding: .5rem;
     }
 
     & span {
         color: $color-primary;
-        transition: all .4s;
-        // font-size: 1.8rem;
-        // line-height: 1.8rem;
+        display: inline-block;
+        transition: all .3s;
     }
 
     &:hover {
         color: $color-primary;
-        font-size: 1.6rem;
-
+        transform: translateY(-2px);
         & span {
-            font-size: 1.6rem;
-            margin-left: 1rem;
+            transform: scaleX(1.2);
+            margin-left: .5rem;
         }
     }
-
-
-
 }

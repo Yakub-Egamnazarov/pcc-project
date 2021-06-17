@@ -31,6 +31,7 @@ body {
 
 .text-primary {
   font-size: 1.8rem;
+  line-height: 2.3rem;
   letter-spacing: .02em;
   color: #4f4f4f; }
 
@@ -40,35 +41,69 @@ body {
   font-size: 1.4rem;
   letter-spacing: .02em; }
 
+.content {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  max-width: 120rem;
+  position: relative; }
+
 .section-features {
   margin: 5rem 1rem 2rem 1rem; }
 
 .btn-text, .btn-text:link, .btn-text:visited {
+  display: inline-block;
   text-decoration: none;
   cursor: pointer;
-  transition: all .4s;
+  transition: all .3s;
   padding: .5rem; }
 
 .btn-text span {
   color: #0c73d5;
-  transition: all .4s; }
+  display: inline-block;
+  transition: all .3s; }
 
 .btn-text:hover {
   color: #0c73d5;
-  font-size: 1.6rem; }
+  transform: translateY(-2px); }
   .btn-text:hover span {
-    font-size: 1.6rem;
-    margin-left: 1rem; }
+    transform: scaleX(1.2);
+    margin-left: .5rem; }
 
-.feature-box {
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-  .feature-box .right-block {
-    padding: .5rem 1.5rem;
-    max-width: 45%; }
-  .feature-box .left-block {
-    padding: .5rem 1.5rem;
-    max-width: 45%; }
-  .feature-box .feature-img {
-    background-image: url("../img/features-1-min.png"); }
+.feature {
+  padding: 7rem 0;
+  width: 100%; }
+  .feature:nth-child(even) {
+    background-color: rgba(17, 148, 246, 0.1); }
+    .feature:nth-child(even) .content {
+      flex-direction: row-reverse; }
+    .feature:nth-child(even) .feature-text-box {
+      margin-right: 0; }
+    .feature:nth-child(even) .feature_img-box {
+      margin-right: 4rem; }
+  .feature .content {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .feature .feature_text-box {
+    width: 45%;
+    margin-right: 4rem; }
+    .feature .feature_text-box .heading-primary {
+      margin: 2rem 0 1.8rem 0; }
+    .feature .feature_text-box .text-primary {
+      margin-bottom: 1.8rem; }
+  .feature .feature_img-box {
+    width: 45%;
+    height: 100%; }
+    .feature .feature_img-box .feature-img {
+      width: 100%;
+      height: 100%;
+      min-height: 24rem;
+      max-height: 38rem;
+      max-width: 63rem;
+      border-radius: 10px;
+      background-image: url(../img/feature-img-1-min.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.25); }
