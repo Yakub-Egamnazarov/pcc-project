@@ -17,7 +17,12 @@ body {
     line-height: 2.3rem;
     letter-spacing: .02em;
     color: $color-grey-dark;
+}
 
+.section-partners {
+    .text-primary {
+        text-align: center;
+    }
 }
 
 .btn-text {
@@ -25,4 +30,40 @@ body {
     font-weight: 700;
     font-size: 1.4rem;
     letter-spacing: .02em;
+}
+
+.footer-message__text {
+    color: $color-grey-light;
+    font-size: 2rem;
+    line-height: 2.5rem;
+
+}
+.btn-submit {
+    font-weight: 700;
+    font-size: 1.4rem;
+    letter-spacing: .02em;
+
+    cursor: pointer;
+}
+
+.contact__text {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    letter-spacing: .5px;
+}
+
+.footer__link {
+
+    font-size: 1.6rem;
+    line-height: 2rem;
+
+}
+
+.copyright-box {
+    font-size: 1.6rem;
+    line-height: 2rem;
+
+    .copyright__icon {
+        font-size: 2rem;
+    }
 }
