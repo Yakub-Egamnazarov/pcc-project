@@ -1,0 +1,110 @@
+.header {
+
+    width: 100%;
+    background-color:rgba($color-black, .8);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    transition: all .3s ease-in-out;
+
+    &-wrapper {
+        width: 100%;
+        padding: 2.5rem 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        transition: all .3s ease-in-out;
+    }
+
+    &-logo {
+
+        .logo__text {
+            transition: all .3s ease-in-out;
+        }
+
+        &:hover {  
+            .logo__text {
+                color: $color-primary;
+                text-shadow: 0 4px 12px rgba($color-white, .1);
+            }
+        }
+    }
+
+    .nav-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+    
+        transform: translateY(2px);
+        transition: all .3s ease-in-out;
+    
+        .nav-link {
+            padding: 0 2.4rem;
+            transition: all .3s ease-in-out;
+    
+            a {
+                color: $color-white;
+                padding-bottom: 4px;
+                border-bottom: 2px solid transparent;
+                transition: all .3s ease-in-out;
+            }
+    
+            &:hover, 
+            &.current {
+                a {
+                    color: $color-primary;
+                    text-shadow: 0 4px 12px rgba($color-white, .1);
+                }
+            }
+
+            &.current {
+                a {
+                    border-bottom-color: $color-primary;
+                }
+            }
+        }
+    }
+
+    &.active {
+        background-color: $color-white;
+
+        box-shadow: 0 4px 8px rgba($color-white, .4);
+
+        .header {
+            &-wrapper {
+                padding: 1rem 0;
+            }
+
+            &-logo {
+                .logo__text {
+                    color: $color-grey-dark;
+                }
+
+                &:hover {
+                    .logo__text {
+                        color: $color-primary;
+                        text-shadow: 0 4px 12px rgba($color-white, .1);
+                    }
+                }
+            }
+
+            
+        }
+
+        .nav-link {
+            a {
+                color: $color-grey-dark;
+            }
+        }
+    }
+
+
+
+}
+
+
