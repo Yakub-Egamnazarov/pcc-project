@@ -27,6 +27,31 @@ a {
     color: $color-grey-dark;
 }
 
+.hero__text {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 2rem;
+    letter-spacing: -0.015px;
+    color: $color-white;
+}
+
+.hero__heading {
+    font-weight: 600;
+    font-size: 5.8rem;
+    line-height: 6rem;
+    color: $color-white;
+    text-shadow: 0 2px 20px rgba($color-grey, 0.2);
+}
+
+.hero__link {
+    a {
+        color: $color-white;
+        font-size: 1.8rem;
+        line-height: 2rem;
+        letter-spacing: -0.015px;
+    }
+}
+
 .section-partners {
     .text-primary {
         text-align: center;
