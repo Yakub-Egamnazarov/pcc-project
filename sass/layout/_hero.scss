@@ -26,7 +26,6 @@
             z-index: -10;
 
             opacity: 0;
-            animation: bg-fade-in-right 0.4s ease-in forwards,  background-increase 5s linear forwards;
 
         }
 
@@ -62,6 +61,10 @@
         &.current {
             opacity: 1;
             z-index: 10;
+
+            &::before {
+                animation: bg-fade-in-right 1s ease-in forwards,  background-increase 8s linear forwards;
+            }
 
             .hero-content {
                 // opacity: 1;
@@ -120,6 +123,9 @@
     &__link {
 
         overflow: hidden;
+        &:hover a {
+            color: $color-primary;
+        }
         .activity-line {
             width: 100%;
             height: 4px;
@@ -131,6 +137,7 @@
 
         a {
             text-shadow: 0 4px 10px rgba($color-grey-light, .5);
+            transition: 0.2s;
         }
 
         &.current {
